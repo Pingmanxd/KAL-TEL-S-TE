@@ -24,9 +24,8 @@ body {
 
 @font-face {
     font-family: 'Tungsten';
-    src: url('https://fonts.cdnfonts.com/s/57249/Tungsten-Bold.woff') format('woff');
+    src: url('https://fonts.cdnfonts.com/css/tungsten') format('woff');
     font-weight: bold;
-    font-style: normal;
 }
 
 .container {
@@ -523,4 +522,124 @@ nav ul li a.active {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #e03a4c;
+}
+
+
+/* Bakiye Yükleme Sayfası Stilleri */
+.bakiye-section {
+    padding: 80px 0;
+    background-color: #0f1923;
+}
+
+.payment-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.method-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 70, 85, 0.3);
+}
+
+.method-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff4655;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.method-card i {
+    font-size: 3rem;
+    color: #ff4655;
+    margin-bottom: 15px;
+}
+
+.method-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.payment-form {
+    background: rgba(15, 25, 35, 0.8);
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+    display: none;
+}
+
+.payment-form.active {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ff4655;
+    border-radius: 4px;
+    color: white;
+}
+
+.payment-submit {
+    background: #ff4655;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.payment-submit:hover {
+    background: #e03a4c;
+}
+
+/* Sayfa geçişleri */
+.page {
+    display: none;
+    animation: fadeIn 0.5s;
+}
+
+.page.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Aktif menü öğesi */
+nav ul li a.active {
+    color: #ff4655;
+    position: relative;
+}
+
+nav ul li a.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff4655;
 }

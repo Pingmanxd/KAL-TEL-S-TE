@@ -18,11 +18,37 @@
                     <li><a href="#nasil-calisir">Nasıl Çalışır?</a></li>
                     <li><a href="#profil" id="profileLink">Profil</a></li>
                     <li><a href="#bakiye" id="balanceLink">Bakiye: 0 VP</a></li>
+                    <li><a href="#bakiye-yukle">Bakiye Yükle</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
+    <section id="bakiye-yukle" class="bakiye-section">
+        <div class="container">
+            <h2>Bakiye Yükle</h2>
+            <div class="payment-methods">
+                <div class="method-card">
+                    <i class="fab fa-cc-paypal"></i>
+                    <h3>PayPal</h3>
+                    <button class="btn payment-btn" data-method="paypal">Seç</button>
+                </div>
+                <div class="method-card">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>Kredi Kartı</h3>
+                    <button class="btn payment-btn" data-method="creditcard">Seç</button>
+                </div>
+                <div class="method-card">
+                    <i class="fab fa-bitcoin"></i>
+                    <h3>Crypto</h3>
+                    <button class="btn payment-btn" data-method="crypto">Seç</button>
+                </div>
+            </div>
+            
+            <div id="payment-form" class="payment-form">
+                <!-- Dinamik olarak yüklenecek -->
+            </div>
+        </div>
+    </section>
     <section class="hero">
         <div class="container">
             <h1>Valorant Point Kazan ve Harika Ödüller Aç!</h1>
@@ -36,19 +62,19 @@
             <h2>Kasalar</h2>
             <div class="cases-grid">
                 <div class="case-card" data-case="1">
-                    <img src="case1.png" alt="Temel Kasa">
+                    <img src="KAPAK.png" alt="Temel Kasa">
                     <h3>Temel Kasa</h3>
                     <p>50 VP - 1000 VP arası</p>
                     <button class="btn open-case">50 VP - Aç</button>
                 </div>
                 <div class="case-card" data-case="2">
-                    <img src="case2.png" alt="Premium Kasa">
+                    <img src="case1.png" alt="Temel Kasa">
                     <h3>Premium Kasa</h3>
                     <p>200 VP - 5000 VP arası</p>
                     <button class="btn open-case">200 VP - Aç</button>
                 </div>
                 <div class="case-card" data-case="3">
-                    <img src="case3.png" alt="Elit Kasa">
+                    <img src="case1.png" alt="Temel Kasa">
                     <h3>Elit Kasa</h3>
                     <p>500 VP - 10000 VP arası</p>
                     <button class="btn open-case">500 VP - Aç</button>
