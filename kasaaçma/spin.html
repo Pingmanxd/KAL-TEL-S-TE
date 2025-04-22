@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Point Kazan | Kasa Aç</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Pindoro</div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Ana Sayfa</a></li>
+                    <li><a href="#kasalar">Kasalar</a></li>
+                    <li><a href="#nasil-calisir">Nasıl Çalışır?</a></li>
+                    <li><a href="#profil" id="profileLink">Profil</a></li>
+                    <li><a href="#bakiye" id="balanceLink">Bakiye: 0 VP</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Valorant Point Kazan ve Harika Ödüller Aç!</h1>
+            <p> Pingman34 & Edoro0 KAZANMANIZ DİLEĞİYLE </p>
+            <a href="#kasalar" class="btn">Kasaları Gör</a>
+        </div>
+    </section>
+
+    <section id="kasalar" class="cases-section">
+        <div class="container">
+            <h2>Kasalar</h2>
+            <div class="cases-grid">
+                <div class="case-card" data-case="1">
+                    <img src="case1.png" alt="Temel Kasa">
+                    <h3>Temel Kasa</h3>
+                    <p>50 VP - 1000 VP arası</p>
+                    <button class="btn open-case">50 VP - Aç</button>
+                </div>
+                <div class="case-card" data-case="2">
+                    <img src="case2.png" alt="Premium Kasa">
+                    <h3>Premium Kasa</h3>
+                    <p>200 VP - 5000 VP arası</p>
+                    <button class="btn open-case">200 VP - Aç</button>
+                </div>
+                <div class="case-card" data-case="3">
+                    <img src="case3.png" alt="Elit Kasa">
+                    <h3>Elit Kasa</h3>
+                    <p>500 VP - 10000 VP arası</p>
+                    <button class="btn open-case">500 VP - Aç</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nasil-calisir" class="how-it-works">
+        <div class="container">
+            <h2>Nasıl Çalışır?</h2>
+            <div class="steps">
+                <div class="step">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>Bakiye Yükle</h3>
+                    <p>Hesabına para yatırarak Valorant Point (VP) kazan.</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-box-open"></i>
+                    <h3>Kasa Seç</h3>
+                    <p>İstediğin kasa türünü seç ve aç.</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Ödülünü Al</h3>
+                    <p>Kazanıdığın VP'leri Valorant'ta kullan!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kasa Açma Modalı -->
+    <div id="caseModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Kasa Açılıyor...</h2>
+            <div class="case-opening-animation">
+                <div class="items-container">
+                    <!-- JavaScript ile doldurulacak -->
+                </div>
+                <div class="won-item">
+                    <h3 id="wonAmount">0 VP</h3>
+                    <button id="claimBtn" class="btn">Ödülü Al</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Diğer modal ve footer içerikleri aynı kalıyor -->
+    <script src="script.js"></script>
+</body>
+</html>
