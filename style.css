@@ -1,0 +1,74 @@
+/* Auth Modal Stilleri */
+.auth-container {
+    max-width: 450px;
+    padding: 40px;
+    background: var(--secondary-color);
+    border-radius: 8px;
+}
+
+.auth-form {
+    display: none;
+    animation: fadeIn 0.3s;
+}
+
+.auth-form.active {
+    display: block;
+}
+
+.auth-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.auth-form .form-group {
+    margin-bottom: 20px;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 70, 85, 0.3);
+    border-radius: 4px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: var(--primary-color);
+    font-weight: bold;
+}
+
+.auth-switch {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.auth-switch a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Çıkış butonu */
+#logoutBtn {
+    color: var(--accent-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#logoutBtn:hover {
+    color: var(--primary-color);
+}
